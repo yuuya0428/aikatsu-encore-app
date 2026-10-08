@@ -1,34 +1,31 @@
 {
   "name": "アイカツ！アンコール カード帳",
   "short_name": "アイカツ！アンコール",
-  "id": "./",
-  "start_url": "./",
-  "scope": "./",
+  "id": "https://yuuya0428.github.io/aikatsu-encore-app/v2/",
+  "start_url": "https://yuuya0428.github.io/aikatsu-encore-app/v2/",
+  "scope": "https://yuuya0428.github.io/aikatsu-encore-app/v2/",
   "lang": "ja",
-  "dir": "ltr",
   "display": "standalone",
-  "display_override": ["window-controls-overlay","standalone"],
   "orientation": "portrait-primary",
   "background_color": "#fff7fb",
   "theme_color": "#e83b91",
   "description": "アイカツ！アンコールのカード所持・ほしい・コーデ進捗を管理するカード帳アプリ",
-  "categories": ["games","lifestyle"],
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "../icons/icon-192.png",
+      "src": "https://yuuya0428.github.io/aikatsu-encore-app/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "../icons/icon-512.png",
+      "src": "https://yuuya0428.github.io/aikatsu-encore-app/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "../icons/apple-touch-icon.png",
+      "src": "https://yuuya0428.github.io/aikatsu-encore-app/icons/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"

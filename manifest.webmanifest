@@ -9,9 +9,9 @@
   "display":"standalone",
   "display_override":["window-controls-overlay","standalone"],
   "orientation":"portrait-primary",
-  "background_color":"#fff6fb",
+  "background_color":"#fff7fb",
   "theme_color":"#e83b91",
-  "description":"アイカツ！アンコールのカード所持・ほしいを管理するカード帳アプリ",
+  "description":"アイカツ！アンコールのカード所持・ほしい・コーデ進捗を管理するカード帳アプリ",
   "categories":["games","lifestyle"],
   "prefer_related_applications":false,
   "icons":[

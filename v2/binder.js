@@ -37,5 +37,5 @@ document.getElementById('binderNext').addEventListener('click',function(){if(pag
 document.getElementById('binderAddPage').addEventListener('click',function(){if(pages.length>=100){alert('ページは最大100ページです');return}pages.push(['','','','']);pageIndex=pages.length-1;persist()});
 document.getElementById('binderRemovePage').addEventListener('click',function(){if(pages.length===1){if(!pages[0].some(Boolean)){alert('このページは空です');return}if(!confirm('このページのカード配置をすべて削除しますか？'))return;pages[0]=['','','',''];persist();return}if(!confirm('このページのカード配置を削除しますか？'))return;pages.splice(pageIndex,1);pageIndex=Math.min(pageIndex,pages.length-1);persist()});
 window.addEventListener('storage',function(e){if(e.key===key){try{pages=JSON.parse(e.newValue||'[]')}catch(_){pages=[]}if(!pages.length)pages=[['','','','']];render()}});
-render();
+window.__binderExport=function(){return pages.map(function(p){return p.slice()})};window.__binderImport=function(p){if(!Array.isArray(p))return;pages=p.map(function(x){return [0,1,2,3].map(function(i){return Array.isArray(x)?(x[i]||''):''})}).slice(0,100);if(!pages.length)pages=[['','','','']];pageIndex=Math.min(pageIndex,pages.length-1);persist()};render();
 })();
